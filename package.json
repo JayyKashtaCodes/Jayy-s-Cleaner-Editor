@@ -1,0 +1,8 @@
+{
+    "name": "com.jayykashta.jayyscleanereditor",
+    "version": "0.0.1",
+    "displayName": "Jayys Cleaner Editor",
+    "description": "Cleans the Editor a bit and adds extra functionality.",
+    "unity": "2022.3",
+    "dependencies": {}
+}
