@@ -3,18 +3,9 @@ using UnityEngine;
 
 public class HierarchyDividers : Editor
 {
-    private static Font customFont;
-
     [InitializeOnLoadMethod]
     static void OnProjectLoadedInEditor()
     {
-        customFont = EditorGUIUtility.Load("OpenSans.ttf") as Font;
-
-        if (customFont == null)
-        {
-            Debug.LogError("Custom font not found!");
-        }
-
         EditorApplication.hierarchyWindowItemOnGUI += OnHierarchyGUI;
     }
 
@@ -58,7 +49,6 @@ public class HierarchyDividers : Editor
 
             GUIStyle style = new(EditorStyles.label)
             {
-                font = customFont,
                 fontStyle = FontStyle.Bold,
                 fontSize = 13,
                 alignment = TextAnchor.MiddleCenter,
